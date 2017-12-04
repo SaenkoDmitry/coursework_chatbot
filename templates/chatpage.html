@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual assistant for poet</title>
+    <h1>Hello, Friend!</h1>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+    <div class="results">
+        {% for key, value in result %}
+            {% if key == 'human' %}
+                <p style="color: #820800;"><b style="color: #820800;">{{ key }} :</b> {{ value }}</p>
+            {% endif %}
+            {% if key == 'bot' %}
+                <p style="color: #03009b;"><b style="color: #03009b;">{{ key }} :</b> {{ value }}</p>
+            {% endif %}
+
+        {% endfor %}
+    <div/>
+
+    <form action = "http://localhost:5000/" method = "POST">
+        <input type = "text" name = "Msg" placeholder="Enter your text" class="textarea-awesome"/>
+        <input type = "submit" value = "submit" class="awesome"/>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    padding-bottom: 100px;
+    background-color: #043d49;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+* {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: black;
+    font-size: 25px;
+}
+
+div.results {
+    border-color: #1b6f8a; /* Цвет границы */
+    overflow: auto; /* Добавляем полосы прокрутки */
+    width: 100%; /* Ширина блока */
+    height: 650px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 1px black; /* Параметры рамки */
+    border-style: solid; /* Стиль границы */
+    position: relative;
+    background-color: #94bec5;
+    color: black;
+}
+
+form {
+    position: fixed;
+    bottom: 2rem;
+    width: 50%;
+    left: 25%;
+}
+
+input.textarea-awesome {
+    padding: 5px 10px 6px;
+    color: #575757;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+input.awesome {
+    padding: 5px 10px 6px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-box-shadow: 0 1px 3px #4dbbc5;*/
+    /*-webkit-box-shadow: 0 1px 3px #79b4be;*/
+    text-shadow: 0 -1px 1px #1b6f8a;
+    border-bottom: 1px solid #222;
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 1;
+}
